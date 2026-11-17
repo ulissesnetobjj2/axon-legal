@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusão de Conta e Dados — Método Axon</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23B84A79'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0E0F17;
+      --card: #151722;
+      --borda: rgba(255, 255, 255, 0.08);
+      --acc: #B84A79;
+      --texto: #F8FAFC;
+      --mudo: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--texto);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--borda);
+    }
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--borda);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    p, li {
+      color: #CBD5E1;
+      font-size: .95rem;
+      margin-bottom: 12px;
+    }
+    ul, ol {
+      margin: 10px 0 16px 24px;
+    }
+    .destaque {
+      background: rgba(184, 74, 121, 0.12);
+      border-left: 3px solid var(--acc);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      color: #F1F5F9;
+    }
+    .link-email {
+      display: inline-block;
+      background: var(--acc);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: .92rem;
+      margin-top: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: .8rem;
+      color: var(--mudo);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="./assets/logo-axon-marca.png" alt="Método Axon" style="height:44px;object-fit:contain;" />
+      <h1>Solicitação de Exclusão de Conta e Dados</h1>
+      <p style="color:var(--mudo);font-size:.9rem;margin-top:6px;">Aplicativo: Método Axon · Desenvolvedor: Axon Team</p>
+    </div>
+
+    <div class="card">
+      <h2>1. Como excluir sua conta diretamente pelo aplicativo</h2>
+      <p>Você pode excluir sua conta de forma imediata e definitiva sem depender de suporte:</p>
+      <ol>
+        <li>Abra o aplicativo <strong>Método Axon</strong> no seu celular.</li>
+        <li>Toque na aba <strong>Perfil</strong> (ícone de perfil no canto inferior direito).</li>
+        <li>Role até a seção <strong>Sua Conta & Acesso</strong>.</li>
+        <li>Clique no botão vermelho <strong>"Excluir conta permanentemente"</strong> e confirme.</li>
+      </ol>
+      <p>A exclusão dos seus dados do banco de dados ocorrerá imediatamente após a confirmação.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Solicitação de exclusão por e-mail ou via Web</h2>
+      <p>Se você não tiver mais acesso ao aplicativo instalado no seu celular, você pode solicitar a exclusão de todos os seus dados enviando um e-mail para a nossa equipe técnica:</p>
+      <div class="destaque">
+        <p><strong>E-mail de Suporte:</strong> suporte@metodoaxon.com</p>
+        <p><strong>Assunto:</strong> Exclusão de Conta e Dados — Método Axon</p>
+        <p><strong>Corpo da mensagem:</strong> Informe o e-mail cadastrado na sua conta.</p>
+      </div>
+      <a class="link-email" href="mailto:suporte@metodoaxon.com?subject=Exclus%C3%A3o%20de%20Conta%20e%20Dados%20%E2%80%94%20M%C3%A9todo%20Axon">Solicitar exclusão por e-mail</a>
+    </div>
+
+    <div class="card">
+      <h2>3. Quais dados são excluídos</h2>
+      <ul>
+        <li><strong>Credenciais de Login:</strong> E-mail, hash de senha e identificador único de usuário (UID).</li>
+        <li><strong>Dados Biométricos:</strong> Idade, gênero biológico, peso, altura e metas metabólicas.</li>
+        <li><strong>Histórico de Treino:</strong> Periodizações geradas por IA, registros de cargas, séries e recordes.</li>
+        <li><strong>Mídias:</strong> Foto de perfil e registros visuais voluntários.</li>
+      </ul>
+      <p><strong>Período de retenção:</strong> Nenhum dado pessoal é retido após o processamento da exclusão.</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Método Axon. Todos os direitos reservados.
+    </div>
+  </div>
+</body>
+</html>
